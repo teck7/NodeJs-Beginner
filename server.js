@@ -2,6 +2,7 @@ var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
+var vehicle = require('./app/models/vehicle');
 
 // Configure app for bodyParser()
 // lets us grab data from the body of POST
