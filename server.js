@@ -62,7 +62,7 @@ router.route('/vehicles')
     });
   });
 
-router.router('/vehicle/:vehicle_id')
+router.route('/vehicle/:vehicle_id')
   .get(function(req, res) {
     Vehicle.findById(req.params.vehicle_id, function(err, vehicle) {
       if (err) {
@@ -86,7 +86,7 @@ router.route('/vehicle/color/:color')
   .get(function(req, res) {
     Vehicle.find({color:req.params.color}, function(err, vehicle) {
       if (err) {
-        res.send(err)
+        res.send(err);
       }
       res.json(vehicle);
     });
