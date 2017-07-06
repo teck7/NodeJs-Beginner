@@ -68,7 +68,7 @@ router.route('/vehicle/:vehicle_id')
       if (err) {
         res.send(err);
       }
-      res.json(vehicles);
+      res.json(vehicle);
     });
   });
 
